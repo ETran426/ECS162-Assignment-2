@@ -125,7 +125,7 @@ footer a{
     color: #FFBF00;
 }
 
-@media (max-width: 770px) {
+@media (max-width: 870px) {
     nav {
         display: none; /* Hide the entire navigation menu */
     }

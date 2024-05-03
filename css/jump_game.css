@@ -96,3 +96,23 @@ p,h1{
         background-size: cover;
     }
 }
+
+#btns  {
+    padding: 15px 20px;
+    color: #FFBF00;
+    background: #eee;
+    border: none;
+    border-radius: 5px;
+    font-size: 2em;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#btns:hover {
+    background-color: #022851;
+}
+  
+#btns:active {
+    background-color: #022851;
+    transform: translateY(1px); 
+}

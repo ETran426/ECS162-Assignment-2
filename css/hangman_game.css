@@ -40,6 +40,7 @@
     border-radius: 5px;
     font-size: 2em;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .button-container button:hover {
