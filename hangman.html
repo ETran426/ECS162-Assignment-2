@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hangman_game.css">
+    <title>UC Davis Themed Hangman Game</title>
+</head>
+<body>
+    <header>
+        <div class="flex">
+            <div class="logo">
+                <a href="/index.html"><img src="/images/uc-logo-gold.png" alt="Logo"></a>
+            </div>
+            <nav>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/hangman.html">Hangman</a></li>
+                <li><a href="/jump.html">Jump Game</a></li>
+                <li><a href="/memory.html">Memory</a></li>
+            </nav>
+        </div>
+    </header> 
+    
+    <main>
+        <div class="centered-box">
+            <h1>Hangman Game</h1>
+            <h2> Theme: UC Davis </h2>
+            <p>Guess the word by selecting letters:</p>
+            <div id="wordDisplay"></div>
+            <p id="guesses"></p>
+            <p id="chances"></p>
+            <h2 id="message"></h2>
+            <div id="keyboard"></div>
+            <br>
+            
+            <br>
+            <p id="instructions">Instructions: Press on avaliable letters to find the hidden word. Be careful as you only can make 6 mistakes!</p>
+            <div class="button-container">
+                <button " onclick="window.location.reload()">Reset Game</button>
+                <button id="easy"> Give Me A Letter </button>
+            </div>
+        </div>
+    </main>  
+
+    <footer>
+        Copyright &copy; Second Website 2024
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/hangman.js"></script>
+</body>
+</html>

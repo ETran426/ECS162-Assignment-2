@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" onclick="jump()" onkeypress="jump()">
+<head>
+    <script>
+        function sta(){};
+        function jump(){};
+        function check(){};
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/jump_game.css">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favico.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Run Cow Run!</title>
+    <!-- This game was the source code provided by https://github.com/Afalkenhagen/run-dino-run-->
+</head>
+
+<body>
+    <header>
+    <div class="flex">
+        <div class="logo">
+            <a href="/index.html"><img src="/images/uc-logo-gold.png" alt="Logo"></a>
+        </div>
+        <nav>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/hangman.html">Hangman</a></li>
+            <li><a href="/jump.html">Jump Game</a></li>
+            <li><a href="/memory.html">Memory</a></li>
+        </nav>
+    </div>
+    </header> 
+
+    <main>
+      <div class="centered-box">
+        <h1>Run Cow Run!</h1>
+        <br>
+        <p>High Score: <span id="scorebest">0</span></p>
+
+        <p>Current Score: <span id="scoreSpan"></span></p>
+        
+        <div class="game">
+            <div id="character">
+                <img src="/jump_img/cow.png" alt="cow" class="cow">
+            </div>
+            <div id="block">
+                <img src="/jump_img/wood.png" alt="wood tunk" class="wood">
+            </div>
+        </div>
+        <h1 id="btns" onclick="this.style.display='none';sta()">
+          Press Here to Start
+        </h1>
+
+        <p>Instructions: Use spacebar or mouseclick to jump over the logs!</p>
+      </div>
+	</main>
+
+    <footer>
+    This website uses code created by Afalkenhagen from the <a href="https://github.com/Afalkenhagen/run-dino-run" target="_blank" rel="noopener noreferrer">Run Dino Run GitHub repository</a>, licensed under GPL-3.0.
+    <br>
+    <br>
+    Copyright &copy; Second Website 2024. 
+    </footer>
+
+</body>
+<script src="js/dino.js"></script>
+<script src="js/script.js"></script>
+</html>

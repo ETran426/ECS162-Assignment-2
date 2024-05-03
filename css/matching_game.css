@@ -1,0 +1,117 @@
+/* Game container */
+.centered-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%; 
+    height: auto; 
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+}
+
+.centered-box p {
+    margin: 25px auto;
+    text-align: center;
+}
+
+/* Buttons container */
+.button-container {
+    display: flex;
+}
+
+.button-container button {
+    margin-right: 10px; /* Adjust spacing between buttons */
+}
+/* Buttons container */
+
+/* Button style */
+button {
+    padding: 15px 20px;
+    color: #FFBF00;
+    background: #eee;
+    border: none;
+    border-radius: 5px;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: #022851;
+}
+  
+button:active {
+    background-color: #022851;
+    transform: translateY(1px); 
+}
+/* Button style */
+
+/* matching cards styles */
+.game {
+    width: 450px;
+    height: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    transform-style: preserve-3d;
+    perspective: 500;
+}
+
+.item {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #eee;
+    transform: rotateY(180deg);
+    transition: 0.25s;
+}
+
+.item.boxOpen {
+    transform: rotateY(0deg);
+}
+
+.item::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: #022851;
+    transition: 0.25s;
+    transform:  rotateY(0deg);
+    backface-visibility: hidden;
+}
+
+.boxOpen::after, 
+.boxMatch::after {
+    transform: rotateY(180deg);
+}
+/* matching cards styles */
+
+/* Mobile design */
+@media (max-width: 770px) {
+    /* Adjust button size for mobile */
+    button {
+        padding: 10px 15px; 
+        font-size: 1.5em; 
+    }
+
+    .button-container button {
+        margin-right: 5px;
+    }
+
+    .game {
+        width: 75%;
+        height: auto;
+    }
+
+    .item {
+        width: 60px;
+        height: 60px;
+    }
+}

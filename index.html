@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Creative Assignment 2 :: JavaScript Game Arcade Website</title>
+    <!-- 
+        Sources: 
+        // Used to help understand flex and navigation bar
+        https://youtu.be/Y2KNDUHjZV0?si=HI6o10LLrCGaSYlF
+        
+        // Arrow Key Navigation 
+        https://stackoverflow.com/questions/5597060/detecting-arrow-key-presses-in-javascript
+        https://stackoverflow.com/questions/5597060/detecting-arrow-key-presses-in-javascript
+
+        // CSS for memory 
+        https://youtu.be/M0egyNvsN-Y?si=v9v61zeRMm0Vhmdd
+    -->
+
+    <!-- 
+        The source code provided by https://github.com/Afalkenhagen/run-dino-run
+        Array Shuffle: https://medium.com/@khaledhassan45/how-to-shuffle-an-array-in-javascript-6ca30d53f772
+    -->
+
+    <!--
+        Sources for Images
+        https://1000logos.net/wp-content/uploads/2024/01/UC-Davis-logo.png
+        https://marketingtoolbox.ucdavis.edu/departments/social-media/resources/zoom-images
+        https://dinopixel.com/pixel-art/chunky-cow/23539
+        https://pin.it/3kaqre17i
+        https://www.pixilart.com/draw/pixel-farmer-40d975fff6e4c5c
+        https://stock.adobe.com/images/bunch-of-black-grapes-with-leaves-and-vine-isolated-on-white-background-pixel-art-fruit-icon-old-school-8-bit-slot-machine-pictogram-berry-symbol-retro-80s-90s-video-game-graphics-wine-logotype/197088428
+        https://www.freepik.com/premium-vector/double-decker-bus-with-pixel-art-style_19580548.htm
+        https://freebiesupply.com/logos/uc-davis-aggies-logo-2/
+        https://pngtree.com/freepng/big-tree-in-pixel-art-style_8624072.html
+    -->
+</head>
+<body>
+    <header>
+        <div class="flex">
+            <div class="logo">
+                <a href="/index.html"><img src="/images/uc-logo-gold.png" alt="Logo"></a>
+            </div>
+            <nav>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/hangman.html">Hangman</a></li>
+                <li><a href="/jump.html">Jump Game</a></li>
+                <li><a href="/memory.html">Memory</a></li>
+            </nav>
+        </div>
+    </header> 
+
+    <main>
+        <section id="img">
+            <div class="marketing-text">
+                <h1> UC <span> DAVIS </span>THEMED</h1>
+            </div>
+        </section>
+
+        <section id="menu">
+            <h1>Arcade Games</h1>
+            <div class="flex">
+                <div class="box">
+                    <a href="/hangman.html">
+                        <img src="/images/hangman_background.png" alt="Hangman Game Image">
+                        <div class="box-description">
+                            <h4>Hangman</h4>
+                            <p>Guess letters to reveal the word before the time runs out, you have 6 tries!</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="box">
+                    <a href="/jump.html">
+                        <img src="/images/jump_background.png" alt="Cow Jump Game Image"/>
+                        <div class="box-description">
+                            <h4>Run Cow Run!</h4>
+                            <p>Inspired by the Chrome Dinosaur game, help the cow jump over obstacles to avoid extinction!</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="box">
+                    <a href="memory.html">
+                        <img src="/images/memory_background.png" alt="Matching Game Image"/>
+                        <div class="box-description">
+                            <h4>Matching Game</h4>
+                            <p>Find the matching pairs before time runs out!</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>  
+
+    <footer>
+        Copyright &copy; Second Website 2024
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

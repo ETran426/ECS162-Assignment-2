@@ -1,0 +1,141 @@
+body {
+    font-family: "Lucida Console", "Courier New", monospace;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.flex {
+    display: flex;
+    max-width: 85%;
+    margin: 0 auto;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+/*start of header styles*/
+header {
+    background-color: #022851;
+    padding: 0 20px;
+    position: relative; 
+    border-bottom: 2px solid #FFBF00;
+}
+
+nav {
+    margin: 10px 0 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav li a {
+    color: #eee;
+    font-weight: 400;
+}
+
+nav li a:hover {
+    color: #FFBF00;
+}
+
+.logo img{
+    width: 150px;
+    height: auto;
+}
+/*end of header styles*/
+
+/* start of title style*/
+#img {
+    background: url("/images/background_ucdavis.jpg") top  center no-repeat;
+    height:  800px;
+    background-size: cover;
+    /*margin-bottom: 75px;*/
+}
+
+.marketing-text {
+    position: absolute;
+    top: 35%;
+    right: 10%;
+}
+
+.marketing-text h1 {
+    color: #022851;
+    font-size:  5em;
+    font-weight: 1000;
+    margin: 0.5em 0;
+}
+
+.marketing-text span {
+    color: #eee;
+}
+/* end of title style*/
+
+/* games menu styles */
+#menu {
+    background-size: cover;
+    background-color: #eef2f6;
+    padding: 50px 0 100px;
+}
+
+#menu h1 {
+    text-align: center;
+}
+
+#menu .box {
+    position: relative;
+    flex-basis: 31%;
+    background-color: #fff;
+}
+
+#menu .box img {
+    width: 100%;
+}
+
+#menu .box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#menu .box .box-description {
+    padding: 20px;
+}
+
+#menu .box .box-description p {
+    color: #999;
+}
+
+#menu .box a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+/* games menu styles */
+
+footer {
+    border-top: 2px solid #FFBF00; 
+    background-color: #022851;
+    padding: 10px 0;
+    text-align: center;
+    color: #ddd;
+}
+
+footer a{
+    color: #FFBF00;
+}
+
+@media (max-width: 770px) {
+    nav {
+        display: none; /* Hide the entire navigation menu */
+    }
+
+    #menu .box {
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+
+    #menu .flex {
+        flex-wrap: wrap;
+    }
+}

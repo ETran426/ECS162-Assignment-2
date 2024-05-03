@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/matching_game.css">
+    <title>UC Davis Themed Matching Game</title>
+    <!--
+        Sources for Images
+        // https://dinopixel.com/pixel-art/chunky-cow/23539
+        // https://pin.it/3kaqre17i
+        // https://www.pixilart.com/draw/pixel-farmer-40d975fff6e4c5c
+        // https://stock.adobe.com/images/bunch-of-black-grapes-with-leaves-and-vine-isolated-on-white-background-pixel-art-fruit-icon-old-school-8-bit-slot-machine-pictogram-berry-symbol-retro-80s-90s-video-game-graphics-wine-logotype/197088428
+        // https://www.freepik.com/premium-vector/double-decker-bus-with-pixel-art-style_19580548.htm
+        // https://freebiesupply.com/logos/uc-davis-aggies-logo-2/
+        // https://pngtree.com/freepng/big-tree-in-pixel-art-style_8624072.html
+    -->
+</head>
+
+<body>
+    <header>
+        <div class="flex">
+            <div class="logo">
+                <a href="/index.html"><img src="/images/uc-logo-gold.png" alt="Logo"></a>
+            </div>
+            <nav>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/hangman.html">Hangman</a></li>
+                <li><a href="/jump.html">Jump Game</a></li>
+                <li><a href="/memory.html">Memory</a></li>
+            </nav>
+        </div>
+    </header> 
+
+    <main>
+        <div class="centered-box">
+            <h1>Memory Cards</h1>
+            <br>
+            <div class="game"></div>
+            <h2 id="message"></h2>
+            <p>Instructions: Flip the cards to find the pairs!</p>
+            <div class="button-container">
+                <button " onclick="window.location.reload()">Reset Game</button>
+                <button id="easy"> Pop! (Create Easier Game) </button>
+            </div>
+        </div>
+    </main>  
+
+    <footer>
+        Copyright &copy; Second Website 2024
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/matching.js"></script>
+
+</body>
+</html>

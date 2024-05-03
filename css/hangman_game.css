@@ -1,0 +1,69 @@
+/* Letters Style */
+#keyboard {
+    display: grid;
+    grid-template-columns: repeat(9, auto); 
+    gap: 5px; 
+}
+
+#keyboard button {
+    font-size: 1em;
+    margin: 5px; 
+}
+
+/* Game container */
+.centered-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%; 
+    height: auto; 
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+}
+
+.centered-box p {
+    margin: 25px auto;
+    text-align: center;
+}
+
+/* Button style */
+.button-container button {
+    padding: 15px 20px;
+    color: #FFBF00;
+    background: #eee;
+    border: none;
+    border-radius: 5px;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.button-container button:hover {
+    background-color: #022851;
+}
+  
+.button-container button:active {
+    background-color: #022851;
+    transform: translateY(1px); 
+}
+/* Button style */
+
+@media (max-width: 770px) {
+    .button-container button {
+        padding: 10px 15px; 
+        font-size: 1.5em; 
+    }
+
+    .button-container button {
+        margin-right: 5px;
+    }
+
+    #keyboard button {
+        font-size: .5em;
+        margin: 5px; 
+    }
+}
