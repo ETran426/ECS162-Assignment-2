@@ -2,14 +2,14 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Array of image URLs
     const imageUrls = [
-        "/matching_img/cow.png",
-        "/matching_img/bike.png",
-        "/matching_img/farmer.png",
-        "/matching_img/grape.png",
-        "/matching_img/bus.png",
-        "/matching_img/logo.png",
-        "/matching_img/tree.png",
-        "/matching_img/uc-logo-gold.png",
+        "matching_img/cow.png",
+        "matching_img/bike.png",
+        "matching_img/farmer.png",
+        "matching_img/grape.png",
+        "matching_img/bus.png",
+        "matching_img/logo.png",
+        "matching_img/tree.png",
+        "matching_img/uc-logo-gold.png",
     ];
     let openBoxes = []; // Array to keep track of opened boxes
 
